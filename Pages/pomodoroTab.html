@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Pomodoro Timer Tab</title>
+    <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
+    <link href="sidebar.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a id="checklist" class="link" href="checkListsTab.html"><i class="fa-solid fa-square-check" style="color: #8899a6;"></i>Checklists</a></li>
+                <li><a id="majors" class="link" href="majorsTab.html"><i class="fa-solid fa-user-graduate" style="color: #8899a6;"></i>Majors</a></li>
+                <li><a id="timer" class="link" href="pomodoroTab.html"><i class="fa-solid fa-clock" style="color: #8899a6;"></i>Pomodoro Timer</a></li>
+                <li><a id="bookmark" class="link" href="bookmarksTab.html"><i class="fa-solid fa-bookmark" style="color: #8899a6;"></i>Bookmarks</a></li>
+                <li><a id="settings" class="link" href="settingsTab.html"><i class="fa-solid fa-gear" style="color: #8899a6;"></i>Settings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="timer-container">
+            <h1>Pomodoro Timer</h1>
+
+            <div class="oh">
+                <p id="work">work</p>
+                <p id="break">break</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">25</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play" style="color: #8899a6;"></i></button>
+
+                <a id="reset" href="/"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
