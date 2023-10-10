@@ -5,26 +5,62 @@
     <meta charset="utf-8" />
     <title>Pomodoro Timer Tab</title>
     <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
-    <link href="sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="pomodoroTimer.css" rel="stylesheet" type="text/css" />
+    <script src="nav.js"></script>
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <ul>
-                <li><a id="checklist" class="link" href="checkListsTab.html"><i class="fa-solid fa-square-check" style="color: #8899a6;"></i>Checklists</a></li>
-                <li><a id="majors" class="link" href="majorsTab.html"><i class="fa-solid fa-user-graduate" style="color: #8899a6;"></i>Majors</a></li>
-                <li><a id="timer" class="link" href="pomodoroTab.html"><i class="fa-solid fa-clock" style="color: #8899a6;"></i>Pomodoro Timer</a></li>
-                <li><a id="bookmark" class="link" href="bookmarksTab.html"><i class="fa-solid fa-bookmark" style="color: #8899a6;"></i>Bookmarks</a></li>
-                <li><a id="settings" class="link" href="settingsTab.html"><i class="fa-solid fa-gear" style="color: #8899a6;"></i>Settings</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="timer-container">
-            <h1>Pomodoro Timer</h1>
 
-            <div class="oh">
+    <div class="wrapper hover_collapse">
+
+        <div class="top_navbar">
+            <div class="menu">
+                <h1>POMOMAJOR</h1>
+                <div class="hamburger">
+                    <span onclick="openNav()"><i class="fa-solid fa-bars" style="color: #8899a6"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="side_navbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+           <li>
+               <a href="checkListsTab.html">
+                    <span class="icon"><i class="fa-solid fa-square-check" style="color: #8899a6;"></i></span>
+                    <span class="text">Checklists</span>
+               </a>
+                </li>
+           <li>
+               <a href="majorsTab.html">
+                    <span class="icon"><i class="fa-solid fa-user-graduate" style="color: #8899a6;"></i></span>
+                    <span class="text">Majors</span>
+               </a>
+           </li>
+           <li>
+               <a href="pomodoroTab.html">
+                    <span class="icon"><i class="fa-solid fa-clock" style="color: #8899a6;"></i></span>
+                    <span class="text">Pomodoro Timer</span>
+               </a>
+           </li>
+           <li>
+               <a href="bookmarksTab.html">
+                    <span class="icon"><i class="fa-solid fa-bookmark" style="color: #8899a6;"></i></span>
+                    <span class="text">Bookmarks</span>
+               </a>
+           </li>
+           <li>
+               <a href="settingsTab.html">
+                    <span class="icon"><i class="fa-solid fa-gear" style="color: #8899a6;"></i></span>
+                    <span class="text">Settings</span>
+               </a>
+           </li>
+        </ul>
+    </nav>
+    <div class="content">
+      <h1>Pomodoro Timer</h1>
+        <div class="timer-container">
+
+            <div class="timer-labels">
                 <p id="work">work</p>
                 <p id="break">break</p>
             </div>
@@ -42,9 +78,11 @@
             <div class="controls">
                 <button id="start" onclick="start()"><i class="fa-solid fa-play" style="color: #8899a6;"></i></button>
 
-                <a id="reset" href="/"></a>
+                <a id="reset" href="/"><i class="fa-solid fa-bars-arrow-rotate-left" style="color: #8899a6;"></i></a>
             </div>
         </div>
+
     </div>
+   
 </body>
 </html>

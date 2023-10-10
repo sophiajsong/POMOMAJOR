@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Navbar Example</title>
+    <link href="navbarex.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper hover_collapse">
+        <div class="top_navbar">
+            <div class="logo">POMOMAJOR</div>
+
+            <div class="menu">
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="sidebar_inner">
+            <ul>
+                <li>
+                    <a href="checkListsTab.html">
+                        <span class="icon"><i class="fa-solid fa-square-check" style="color: #8899a6;"></i></span>
+                        <span class="text">Checklists</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="majorsTab.html">
+                        <span class="icon"><i class="fa-solid fa-user-graduate" style="color: #8899a6;"></i></span>
+                        <span class="text">Majors</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pomodoroTab.html">
+                        <span class="icon"><i class="fa-solid fa-clock" style="color: #8899a6;"></i></span>
+                        <span class="text">Pomodoro Timer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="bookmarksTab.html">
+                        <span class="icon"><i class="fa-solid fa-bookmark" style="color: #8899a6;"></i></span>
+                        <span class="text">Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settingsTab.html">
+                        <span class="icon"><i class="fa-solid fa-gear" style="color: #8899a6;"></i></span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        var li_item = document.querySelectorAll("nav ul li");
+        var hamburger = document.querySelectorAll("hamburger");
+        var wrapper = document.querySelectorAll(".wrapper");
+
+        li_item.forEach((li_item) => {
+            li_item.addEventListener("mouseenter", () => {
+                li_item.closest(".wrapper").classList.remove("hover_collapse");
+            })
+        });
+
+        li_item.forEach((li_item) => {
+            li_item.addEventListener("mouseleave", () => {
+                li_item.closest(".wrapper").classList.add("hover_collapse");
+            })
+        });
+    </script>
+</body>
+</html>
