@@ -1,12 +1,12 @@
 // JavaScript source code
 
 function openNav() {
-    document.getElementById("side_navbar").style.width = "200px";
+    document.getElementById("side_navbar").hidden = false;
 
 }
 
 function closeNav() {
-    document.getElementById("side_navbar").style.width = "0px";
+    document.getElementById("side_navbar").hidden = true;
 }
 
 let focusButton = document.getElementById("focus");
@@ -23,6 +23,11 @@ let paused = true;
 let minCount = 24;
 
 time.textContent = `${minCount + 1}:00`;
+
+function playSound() {
+    let ding = new Audio('chime-sound-7143.mp3');
+    ding.play;
+};
 
 const appendZero = (value) => {
     value = value < 10 ? `0${value}` : value;
@@ -74,20 +79,20 @@ longBreakButton.addEventListener("click", () => {
 
 pause.addEventListener(
     "click",
-    (pauseTime = () => {
+    (pauseTimer = () => {
         paused = true;
         clearInterval(set);
-        startBtn.classList.remove("hide");
+        startButton.classList.remove("hide");
         pause.classList.remove("show");
         reset.classList.remove("show");
     })
 );
 
-startBtn.addEventListener("click", () => {
+startButton.addEventListener("click", () => {
     reset.classList.add("show");
     pause.classList.add("show");
-    startBtn.classList.add("hide");
-    startbtn.classList.remove("show");
+    startButton.classList.add("hide");
+    startButton.classList.remove("show");
     if (paused) {
         paused = false;
         time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
@@ -100,6 +105,7 @@ startBtn.addEventListener("click", () => {
                     count = 60;
                 } else {
                     clearInterval(set);
+                    playSound();
                 }
             }
         }, 1000);

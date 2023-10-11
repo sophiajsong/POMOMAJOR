@@ -13,7 +13,7 @@ body {
 }
 
 .top_navbar {
-    position: fixed;
+    position: absolute;
     top:0;
     left: 0;
     width: 100%;
@@ -43,7 +43,6 @@ body {
     cursor: pointer;
 }
 
-
 nav {
     padding: 0 0;
     top: 60px;
@@ -54,7 +53,7 @@ nav {
     width: 200px;
     height: 100%;
     background-color: #192734;
-    position: fixed;
+    position: absolute;
     overflow-x: hidden;
     left: 0;
     padding: 20px 30px;
@@ -104,100 +103,4 @@ nav {
 #side_navbar ul li:hover a{
     color: #8899A6;
     transition: 0.3s;
-}
-
-.content {
-    left: 0;
-    height: 100%;
-    color: #8899a6;
-    font-family: 'Ubuntu';
-}
-
-.content h1 {
-    padding: 60px 100px;
-    font-size: 80px;
-}
-
-.container {
-    font-family: 'Ubuntu';
-    background-color: #192734;
-    width: min(90%, 500px);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 60%;
-    left: 50%;
-    padding: 64px 32px;
-    border-radius: 0.5em;
-    -webkit-box-shadow: 0px 0px 49px 9px rgba(186,186,186,1);
-    -moz-box-shadow: 0px 0px 49px 9px rgba(186,186,186,1);
-    box-shadow: 0px 0px 49px 9px rgba(186,186,186,1);
-}
-
-button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.section-container {
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-}
-
-.btn {
-    font-family: 'Ubuntu';
-    padding: 16px 32px;
-    border-radius: 8px;
-    background-color: #22303C;
-    color: #8899A6;
-}
-
-.btn-focus {
-    background-color: #15202B;
-    color: whitesmoke;
-}
-
-.time-btn-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-}
-
-#time {
-    text-align: center;
-    color: whitesmoke;
-    font-size: 80px;
-    font-weight: 600;
-
-}
-
-.btn-container {
-    padding-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-}
-
-#btn-start, #btn-pause {
-    padding: 16px 32px;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: whitesmoke;
-}
-
-#btn-reset {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 16px;
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: all;
 }
