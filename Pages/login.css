@@ -1,11 +1,11 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 body {
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
-    --color-secondary: #252c6a;
+    --color-primary: #8899a6;
+    --color-primary-dark: #15202B;
+    --color-secondary: #22303C;
     --color-error: #ff0000;
-    --color-success: #b6ff00;
+    --color-success: #8899a6;
     --border-radius: 4px;
     margin: 0px;
     height: 100vh;

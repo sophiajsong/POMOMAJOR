@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>Majors Tab</title>
     <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
+    <link  href="majorsTab.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     <div class="wrapper hover_collapse">
@@ -54,7 +56,12 @@
         </ul>
     </nav>
     <div class="content">
-
+        <div id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <h1>Registered Schools</h1>
+        <table id="school_name"></table>
     </div>
+    <script src="majorsTab.js"></script>
 </body>
 </html>

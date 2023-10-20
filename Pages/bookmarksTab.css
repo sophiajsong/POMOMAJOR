@@ -1,0 +1,106 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    height: 100%;
+}
+
+body {
+    background: #15202B;
+}
+
+.top_navbar {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #22303C;
+    box-shadow: 1px 0 2px rgba(0,0,0,0.125);
+    display: flex;
+    align-content: center;
+}
+
+.top_navbar h1 {
+    font-size: 25px;
+    padding-right: 30px;
+    color: #8899A6;
+}
+
+.top_navbar .menu {
+    width: calc(100%-250px);
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_navbar .hamburger i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav {
+    padding: 0 0;
+    top: 60px;
+    width: 0;
+}
+
+#side_navbar {
+    width: 200px;
+    height: 100%;
+    background-color: #192734;
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
+    padding: 20px 30px;
+    float: left;
+}
+
+#side_navbar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+#side_navbar .closebtn:hover {
+    color: #8899a6;
+    cursor: pointer;
+}
+
+#side_navbar ul {
+    list-style: none;
+    position: relative;
+    padding: 40px 0;
+}
+
+#side_navbar ul li {
+    padding: 10px 0;
+
+}
+
+#side_navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+
+#side_navbar ul li a i {
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+#side_navbar ul li:hover a{
+    color: #8899A6;
+    transition: 0.3s;
+}
