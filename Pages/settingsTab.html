@@ -6,6 +6,8 @@
     <title>Settings Tab</title>
     <script src="https://kit.fontawesome.com/2f762ee0a6.js" crossorigin="anonymous"></script>
     <link href="settingsTab.css" rel="stylesheet" type="text/css" />
+    <link href="dark.css" id="themeStylesheetLink" rel="stylesheet" type="text/css" />
+    <link href="light.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -50,10 +52,22 @@
             <li>
                 <a href="settingsTab.html">
                     <span class="icon"><i class="fa-solid fa-gear" style="color: #8899a6;"></i></span>
-                    <span class="text">Settings</span>
+                    <span class="text" id="active">Settings</span>
                 </a>
             </li>
         </ul>
     </nav>
+    <div class="content">
+        <h1>Hi, Sophia</h1>
+        <div class="themeTime">
+            <h2>Theme Selector:</h2>
+            <select id="themeSelect">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+                <option value="coffee">Coffee</option>
+            </select>
+        </div>
+    </div>
+<script src="settingsTab.js"></script>
 </body>
 </html>

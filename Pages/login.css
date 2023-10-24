@@ -36,9 +36,31 @@ body {
     font-family: 'Ubuntu';
 }
 
-.container,
-.form__input,
-.form__button {
-    
+input {
+    font-family: 'Ubuntu';
+    padding: 9px 16px;
+    width: 75%;
+    margin: 10px 0;
+    font-size: 15px;
+    border-width: thin;
 }
 
+input:focus {
+    border: 2px solid #22303C;
+    outline: none;
+}
+
+.continueButton {
+    font-family: 'Ubuntu';
+    padding: 4px 4px;
+    margin: 40px 0 10px 0;
+    width: auto;
+    border-width: thin;
+}
+
+.continueButton:hover {
+    background-color: transparent;
+    color: #15202B;
+    cursor: pointer;
+    
+}

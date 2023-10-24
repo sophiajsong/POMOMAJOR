@@ -9,7 +9,8 @@ html, body {
 }
 
 body {
-    background: #15202B;
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 .top_navbar {
@@ -103,4 +104,21 @@ nav {
 #side_navbar ul li:hover a{
     color: #8899A6;
     transition: 0.3s;
+}
+
+#active {
+    color: #8899A6;
+}
+
+.content {
+    padding: 100px 100px;
+    font-family: 'Ubuntu';
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    padding: 60px 100px 100px 100px;
+    font-size: 80px;
+    color: var(--primary-text-color);
 }

@@ -13,7 +13,7 @@ body {
 }
 
 .top_navbar {
-    position: absolute;
+    position: fixed;
     top:0;
     left: 0;
     width: 100%;
@@ -53,11 +53,12 @@ nav {
     width: 200px;
     height: 100%;
     background-color: #192734;
-    position: absolute;
+    position: fixed;
     overflow-x: hidden;
     left: 0;
     padding: 20px 30px;
     float: left;
+    z-index: 1;
 }
 
 #side_navbar .closebtn {
@@ -105,21 +106,29 @@ nav {
     transition: 0.3s;
 }
 
+#active {
+    color: #8899A6;
+}
+
 .content {
     left: 0;
     height: 100%;
     color: #8899a6;
     font-family: 'Ubuntu';
+    justify-content: center;
+    z-index: -1;
 }
 
 .content h1 {
     padding: 60px 100px;
     font-size: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .content ul {
-    margin: 0;
-    padding: 100px;
+    padding-inline-start: 0px;
+    padding: 50px 240px 0 190px;
 }
 
 .content ul li {
@@ -134,6 +143,8 @@ nav {
     -ms-user-select: none;
     user-select: none;
     list-style: none;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .content ul li:nth-child(odd) {
@@ -193,7 +204,7 @@ nav {
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 65%;
     padding: 10px;
     float: left;
     font-size: 16px;

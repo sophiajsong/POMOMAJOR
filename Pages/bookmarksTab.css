@@ -104,3 +104,61 @@ nav {
     color: #8899A6;
     transition: 0.3s;
 }
+
+#active {
+    color: #8899A6;
+}
+
+.content {
+    padding: 100px 100px;
+    font-family: 'Ubuntu';
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    padding: 60px 100px 100px 100px;
+    font-size: 80px;
+    color: #8899A6;
+}
+
+.content i {
+    padding-right: 8px;
+}
+
+.card_content {
+    display: none;
+    overflow: hidden;
+    padding: 0 18px;
+    font-family: 'Ubuntu';
+    color: white;
+}
+
+.collapsible {
+    background-color: #22303C;
+    color: #8899A6;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    bottom: 30px;
+    font-family: 'Ubuntu';
+}
+
+.active, .collapsible:hover {
+    background-color: #22303C;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}

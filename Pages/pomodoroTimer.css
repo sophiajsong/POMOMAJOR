@@ -106,6 +106,10 @@ nav {
     transition: 0.3s;
 }
 
+#active {
+    color: #8899A6;
+}
+
 .content {
     left: 0;
     height: 100%;
@@ -114,8 +118,10 @@ nav {
 }
 
 .content h1 {
-    padding: 60px 100px;
+    padding: 60px 100px 150px 100px;
     font-size: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -200,4 +206,13 @@ button {
 
 .show {
     display: all;
+}
+
+.below_timer {
+    position: absolute;
+    bottom: 0px
+}
+
+.time-inputs {
+    display: none;
 }

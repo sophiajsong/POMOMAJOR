@@ -15,23 +15,23 @@
 
         <div class="wrapper">
             <form class="form" id="login">
-                <h1 class="form-title">Login</h1>
-                <div class="form__message form__message--error">Incorrect username/password combination.</div>
-                <div class="form-input">
-                    <input type="text" class="form__input" autofocus placeholder="Username or email" />
-                    <div class="form__input-error-message">User/email error</div>
+                <h1 class="formTitle">Login</h1>
+                <!--<div class="form__message form__message--error">Incorrect username/password combination.</div> -->
+                <div class="formUser">
+                    <input type="text" id ="user"class="formInput" autofocus placeholder="Username or email" />
+                    <!-- <div class="form__input-error-message">User/email error</div> -->
                 </div>
-                <div class="form--input-group">
-                    <input type="text" class="form__input" autofocus placeholder="Password" />
-                    <div class="form__input-error-message">Password error</div>
+                <div class="formPass">
+                    <input type="password" id="pwd" class="formInput" autofocus placeholder="Password" />
+                    <!-- <div class="form__input-error-message">Password error</div> -->
                 </div>
-                <button class="form__button" type="submit">Continue</button>
-                <p class="form__text">
-                    <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account'</a>
+                <button onclick="validateForm()" id="redirectButton" class="continueButton">Continue</button>
+                <p class="addText">
+                    <a class="formLink" href="./" id="linkCreateAccount">Don't have an account? Create account'</a>
                 </p>
             </form>
 
         </div>
-
+    <script src="login.js"></script>
 </body>
 </html>

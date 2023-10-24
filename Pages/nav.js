@@ -9,6 +9,10 @@ function closeNav() {
     document.getElementById("side_navbar").hidden = true;
 }
 
+function reveal() {
+    document.getElementByClassName("time-inputs").hidden = false;
+}
+
 let focusButton = document.getElementById("focus");
 let buttons = document.querySelectorAll(".btn");
 let shortBreakButton = document.getElementById("shortbreak");

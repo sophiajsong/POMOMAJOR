@@ -32,13 +32,13 @@
             <li>
                 <a href="majorsTab.html">
                     <span class="icon"><i class="fa-solid fa-user-graduate" style="color: #8899a6;"></i></span>
-                    <span class="text">Majors</span>
+                    <span class="text">Research</span>
                 </a>
             </li>
             <li>
                 <a href="pomodoroTab.html">
                     <span class="icon"><i class="fa-solid fa-clock" style="color: #8899a6;"></i></span>
-                    <span class="text">Pomodoro Timer</span>
+                    <span class="text" id="active">Pomodoro Timer</span>
                 </a>
             </li>
             <li>
@@ -72,6 +72,13 @@
                         <i class="fa-solid fa-rotate-right" style="color: #8899a6;"></i>
                     </button>
                 </div>
+            </div>
+        </div>
+        <div class="below-timer">
+            <button id="change-button" onclick="reveal()" class="change">Change Times</button>
+            <div class="time-inputs">
+                <input type="text" id="myInput" placeholder="Insert Times Here..." />
+                <span onclick="change()" class="changeBtn">CHANGE TIMES</span>
             </div>
         </div>
     </div>

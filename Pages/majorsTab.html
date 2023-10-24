@@ -32,7 +32,7 @@
             <li>
                 <a href="majorsTab.html">
                     <span class="icon"><i class="fa-solid fa-user-graduate" style="color: #8899a6;"></i></span>
-                    <span class="text">Majors</span>
+                    <span class="text" id="active">Research</span>
                 </a>
             </li>
             <li>
@@ -55,12 +55,215 @@
             </li>
         </ul>
     </nav>
+
     <div class="content">
-        <div id="loading">
-            <span class="sr-only">Loading...</span>
+        <h1 class="header">Research</h1>
+        <div class="card">
+            <button type="button" class="collapsible">American University of Health Sciences</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private For-profit</p>
+                <p>Suburban</p>
+                <p>Small</p>
+                <p class="website">Website: <a href="auhs.edu">auhs.edu</a></p>
+                <p class="location">Location: Signal Hill, CA</p>
+                <p class="acc_rate">Acceptance 100%</p>
+                <p class="sat">SAT/ACT: Not required/recommended</p>
+                <p class="ca">Accepts Common App: No</p>
+                <p class="af">Application Fee: $80</p>
+                <i id="check" class="fa-regular fa-bookmark" style="color: #8899a6;" onclick="change()"></i>
+            </div>
         </div>
-        <h1>Registered Schools</h1>
-        <table id="school_name"></table>
+        <div class="card">
+            <button type="button" class="collapsible">California State University - Maritime Academy</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Public</p>
+                <p>City</p>
+                <p>Small</p>
+                <p class="website">Website: <a href="csum.edu">csum.edu</a></p>
+                <p class="location">Location: Vallejo, CA</p>
+                <p class="acc_rate">Acceptance Rate: 82%</p>
+                <p class="acc_rate">Acceptance Rate: 82%</p>
+                <p class="sat">SAT/ACT: Not required/recommended</p>
+                <p class="ca">Accepts Common App: No</p>
+                <p class="af">Application Fee: $70</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">California Polytechnic State University-San Luis Obispo</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Public</p>
+                <p>Suburban</p>
+                <p>Large</p>
+                <p class="website">Website: <a href="calpoly.edu">calpoly.edu</a></p>
+                <p class="location">Location: San Obispo, CA</p>
+                <p class="acc_rate">Acceptance Rate: 33%</p>
+                <p class="sat">SAT/ACT: Not required/recommended</p>
+                <p class="ca">Accepts Common App: No</p>
+                <p class="af">Application Fee: $70</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Chapman University</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Claremont McKenna College</button>
+            <div class="card_content">
+                <p>4-years</p>
+                <p>Private Nonprofit</p>
+                <p>Suburban</p>
+                <p>Small</p>
+                <p class="location">Location: Claremont, CA</p>
+                <p class="acc_rate">Acceptance Rate: 11%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: Yes</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Golden Gate University</button>
+            <div class="card_content">
+                <p>4-years</p>
+                <p>Private Nonprofit</p>
+                <p>City</p>
+                <p>Small</p>
+                <p class="location">Location: San Fransisco, CA</p>
+                <p class="acc_rate">Acceptance Rate: Not listed</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: No</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Harvey Mudd College</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Loma Linda University</button>
+            <div class="card_content">
+                <p>4-years</p>
+                <p>Private Nonprofit</p>
+                <p>Suburban</p>
+                <p>Small</p>
+                <p class="location">Location: Loma Linda, CA</p>
+                <p class="acc_rate">Acceptance Rate: Not listed</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: No</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Samuel Merritt University</button>
+            <div class="card_content">
+                <p class="years">4-year</p>
+                <p>Private Nonprofit</p>
+                <p>City</p>
+                <p>Small</p>
+                <p class="location">Location: Oakland, CA</p>
+                <p class="acc_rate">Acceptance Rate: Note listed</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: No</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Santa Clara University</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private Nonprofit</p>
+                <p>City</p>
+                <p>Medium</p>
+                <p class="location">Location: Santa Clara, CA</p>
+                <p class="acc_rate">Acceptance Rate: 54%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: Yes</p>
+                <p class="ra">Religious Affiliation: Catholic</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">Stanford University</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private Nonprofit</p>
+                <p>Suburban</p>
+                <p>Medium</p>
+                <p class="location">Location: Stanford, CA</p>
+                <p class="acc_rate">Acceptance Rate: 4%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: Yes</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - Davis</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - Irvine</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - Los Angeles</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - Merced</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - Riverside</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - San Diego</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of California - Santa Barbara</button>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">University of Southern California</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private Nonprofit</p>
+                <p>City</p>
+                <p>Large</p>
+                <p class="location">Location: Los Angeles, CA</p>
+                <p class="acc_rate">Acceptance Rate: 9.9%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: Yes</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">West Coast University-Los Angeles</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private For-profit</p>
+                <p>City</p>
+                <p>Medium</p>
+                <p class="location">Location: North Hollywood, CA</p>
+                <p class="acc_rate">Acceptance Rate: 100%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: No</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">West Coast University-Ontario</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private For-profit</p>
+                <p>City</p>
+                <p>Medium</p>
+                <p class="location">Location: Ontario, CA</p>
+                <p class="acc_rate">Acceptance Rate: 100%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: No</p>
+            </div>
+        </div>
+        <div class="card">
+            <button type="button" class="collapsible">West Coast University-Orange Country</button>
+            <div class="card_content">
+                <p>4-year</p>
+                <p>Private For-profit</p>
+                <p>City</p>
+                <p>Medium</p>
+                <p class="location">Location: Anaheim, CA</p>
+                <p class="acc_rate">Acceptance Rate: 9.9%</p>
+                <p class="sat">SAT/ACT: Optional</p>
+                <p class="ca">Accepts Common App: Yes</p>
+            </div>
+        </div>
+
     </div>
     <script src="majorsTab.js"></script>
 </body>
