@@ -1,4 +1,8 @@
 ﻿:root {
-    --primary-background-color: #F6EEE0;
-    --primary-text-color: #E4B7A0;
+    --primary-background-color: #fafafa;
+    --primary-text-color: #484b6a;
+    --topnavbar-color: #9394a5;
+    --sidenavbar-color: #e4e5f1;
+    --sidenavbar-text-color: #9394a5;
+    --active: #484b6a;
 }

@@ -25,12 +25,13 @@ let set;
 let count = 59;
 let paused = true;
 let minCount = 24;
+let current = localStorage.getItem("counter") || 0;
 
 time.textContent = `${minCount + 1}:00`;
 
 function playSound() {
     let ding = new Audio('chime-sound-7143.mp3');
-    ding.play;
+    ding.play();
 };
 
 const appendZero = (value) => {

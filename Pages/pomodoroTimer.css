@@ -59,6 +59,7 @@ nav {
     left: 0;
     padding: 20px 30px;
     float: left;
+    z-index: 2;
 }
 
 #side_navbar .closebtn {
